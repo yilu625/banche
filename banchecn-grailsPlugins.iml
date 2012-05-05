@@ -33,10 +33,14 @@
       <sourceFolder url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/resources-1.1.6/grails-app/taglib" isTestSource="false" />
     </content>
     <content url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/tomcat-2.0.3" />
+    <content url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/webxml-1.4.1">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/webxml-1.4.1/src/groovy" isTestSource="false" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="grails-2.0.3" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="mysql-connector-java-5.1.17-bin" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="grails-2.0.3" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mysql-connector-java-5.1.18-bin" level="project" />
     <orderEntry type="module-library" exported="">
       <library name="Grails User Library (banchecn-grailsPlugins)">
         <CLASSES />
