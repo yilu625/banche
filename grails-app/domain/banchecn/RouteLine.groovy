@@ -25,4 +25,8 @@ class RouteLine {
     static  mapping = {
         autoTimestamp(true);
     }
+    //用来完成排序功能
+   static  constraints = {
+
+   }
 }
