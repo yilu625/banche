@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/banchecn.iml" filepath="$PROJECT_DIR$/banchecn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/banchecn-grailsPlugins.iml" filepath="$PROJECT_DIR$/banchecn-grailsPlugins.iml" />
+    </modules>
+  </component>
+</project>
+
