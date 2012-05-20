@@ -450,7 +450,7 @@ th a:link, th a:visited {
 }
 
 th a:hover, th a:focus {
-	color: #333333;
+	color: #EFEFEF;
 }
 
 th.sortable a {
@@ -592,7 +592,21 @@ a.skip {
 
 /*customer */
 #header{
-    background: #65AFE6;
+    height: 100%;
+    background: #2C4762 url('/images/background.png') top repeat-x;
+    background-image: url('/images/background.png');
+    background-repeat-x: repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-position-x: 50%;
+    background-position-y: 0%;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #2C4762;
+    font: normal 14px/1.4 "Helvetica Neue","HelveticaNeue",Helvetica,Arial,sans-serif;
+    color: #444;
+    margin: 0;
+    padding: 0;
     padding: 2em 1em 2em 1em;
     margin-bottom: 1em;
 }
@@ -624,4 +638,9 @@ a.header-main:link,a.header-main:visited{
 
 #loginHeader a{
     color: #fff;
+}
+
+#search{
+    float: right;
+    margin: 2em 1em;
 }

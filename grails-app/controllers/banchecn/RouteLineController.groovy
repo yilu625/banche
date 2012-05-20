@@ -3,6 +3,10 @@ package banchecn
 import org.springframework.dao.DataIntegrityViolationException
 
 class RouteLineController {
+    //查询功能
+    def search={
+        render RouteLine.search(params.lineKey,params)
+    }
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
@@ -100,4 +104,25 @@ class RouteLineController {
             redirect(action: "show", id: params.id)
         }
     }
+
+    def viewLine(){
+
+        switchLineType();
+        params.max = Math.min(params.max ? params.int('max') : 10, 100)
+        render(view: 'list',model: [routeLineInstanceList: RouteLine.findAllByLineTypeLike(params.get("lineType")), routeLineInstanceTotal: RouteLine.count()])     ;
+    }
+
+    def  switchLineType(){
+
+
+         String lineType = params.get("lineType");
+         if (lineType.equals("has")){
+             params.put("lineType","已开通路线")
+         }else if(lineType.equals("pre")){
+             params.put("lineType","预开通路线")
+         }else if (lineType.equals("super")){
+             params.put("lineType","精品路线")
+        }
+    }
+
 }

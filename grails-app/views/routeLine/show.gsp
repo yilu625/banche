@@ -23,6 +23,24 @@
 			</g:if>
 			<ol class="property-list routeLine">
 			
+				<g:if test="${routeLineInstance?.lineCharacteristic}">
+				<li class="fieldcontain">
+					<span id="lineCharacteristic-label" class="property-label"><g:message code="routeLine.lineCharacteristic.label" default="Line Characteristic" /></span>
+					
+						<span class="property-value" aria-labelledby="lineCharacteristic-label"><g:fieldValue bean="${routeLineInstance}" field="lineCharacteristic"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${routeLineInstance?.lineType}">
+				<li class="fieldcontain">
+					<span id="lineType-label" class="property-label"><g:message code="routeLine.lineType.label" default="Line Type" /></span>
+					
+						<span class="property-value" aria-labelledby="lineType-label"><g:fieldValue bean="${routeLineInstance}" field="lineType"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${routeLineInstance?.arriveStation}">
 				<li class="fieldcontain">
 					<span id="arriveStation-label" class="property-label"><g:message code="routeLine.arriveStation.label" default="Arrive Station" /></span>
@@ -36,7 +54,7 @@
 				<li class="fieldcontain">
 					<span id="arriveTime-label" class="property-label"><g:message code="routeLine.arriveTime.label" default="Arrive Time" /></span>
 					
-						<span class="property-value" aria-labelledby="arriveTime-label"><g:formatDate date="${routeLineInstance?.arriveTime}" /></span>
+						<span class="property-value" aria-labelledby="arriveTime-label"><g:fieldValue bean="${routeLineInstance}" field="arriveTime"/></span>
 					
 				</li>
 				</g:if>
@@ -73,15 +91,6 @@
 					<span id="lineCarInfo-label" class="property-label"><g:message code="routeLine.lineCarInfo.label" default="Line Car Info" /></span>
 					
 						<span class="property-value" aria-labelledby="lineCarInfo-label"><g:fieldValue bean="${routeLineInstance}" field="lineCarInfo"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${routeLineInstance?.lineCharacteristic}">
-				<li class="fieldcontain">
-					<span id="lineCharacteristic-label" class="property-label"><g:message code="routeLine.lineCharacteristic.label" default="Line Characteristic" /></span>
-					
-						<span class="property-value" aria-labelledby="lineCharacteristic-label"><g:fieldValue bean="${routeLineInstance}" field="lineCharacteristic"/></span>
 					
 				</li>
 				</g:if>
@@ -126,7 +135,7 @@
 				<li class="fieldcontain">
 					<span id="startTime-label" class="property-label"><g:message code="routeLine.startTime.label" default="Start Time" /></span>
 					
-						<span class="property-value" aria-labelledby="startTime-label"><g:formatDate date="${routeLineInstance?.startTime}" /></span>
+						<span class="property-value" aria-labelledby="startTime-label"><g:fieldValue bean="${routeLineInstance}" field="startTime"/></span>
 					
 				</li>
 				</g:if>

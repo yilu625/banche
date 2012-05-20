@@ -5,6 +5,9 @@
       <configuration>
         <webroots>
           <root url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/jquery-1.7.1/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/ckeditor-3.6.2.1/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/ckeditor-3.6.2.1/grails-app/views" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/searchable-0.6.3/grails-app/views" relative="/" />
         </webroots>
         <sourceRoots />
       </configuration>
@@ -17,6 +20,12 @@
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
+    <content url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/ckeditor-3.6.2.1">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/ckeditor-3.6.2.1/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/ckeditor-3.6.2.1/grails-app/i18n" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/ckeditor-3.6.2.1/grails-app/controllers" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/ckeditor-3.6.2.1/grails-app/taglib" isTestSource="false" />
+    </content>
     <content url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/hibernate-2.0.3">
       <sourceFolder url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/hibernate-2.0.3/grails-app/i18n" isTestSource="false" />
     </content>
@@ -32,6 +41,12 @@
       <sourceFolder url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/resources-1.1.6/grails-app/i18n" isTestSource="false" />
       <sourceFolder url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/resources-1.1.6/grails-app/taglib" isTestSource="false" />
     </content>
+    <content url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/searchable-0.6.3">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/searchable-0.6.3/src/java" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/searchable-0.6.3/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/searchable-0.6.3/grails-app/controllers" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/searchable-0.6.3/grails-app/services" isTestSource="false" />
+    </content>
     <content url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/tomcat-2.0.3" />
     <content url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/webxml-1.4.1">
       <sourceFolder url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/webxml-1.4.1/src/groovy" isTestSource="false" />
@@ -43,9 +58,12 @@
     <orderEntry type="library" scope="PROVIDED" name="mysql-connector-java-5.1.18-bin" level="project" />
     <orderEntry type="module-library" exported="">
       <library name="Grails User Library (banchecn-grailsPlugins)">
-        <CLASSES />
+        <CLASSES>
+          <root url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/searchable-0.6.3/lib" />
+        </CLASSES>
         <JAVADOC />
         <SOURCES />
+        <jarDirectory url="file://$USER_HOME$/.grails/2.0.3/projects/banchecn/plugins/searchable-0.6.3/lib" recursive="false" />
       </library>
     </orderEntry>
   </component>

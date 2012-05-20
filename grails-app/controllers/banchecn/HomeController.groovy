@@ -7,7 +7,7 @@ class HomeController {
     def home() {
        //这里完成基本的数据的加载
         params.max = Math.min(params.max ? params.int('max') : 10, 100)
-        [routeLineInstanceList: RouteLine.list(params), routeLineInstanceTotal: RouteLine.count()]
+        [routeLineInstanceList: RouteLine.listOrderByDateCreated(params), routeLineInstanceTotal: RouteLine.count()]
 
     }
 
