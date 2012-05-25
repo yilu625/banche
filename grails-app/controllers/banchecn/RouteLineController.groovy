@@ -106,10 +106,10 @@ class RouteLineController {
     }
 
     def viewLine(){
-
+        print("lineType = "+params.get("lineType"))
         switchLineType();
         params.max = Math.min(params.max ? params.int('max') : 10, 100)
-        render(view: 'list',model: [routeLineInstanceList: RouteLine.findAllByLineTypeLike(params.get("lineType")), routeLineInstanceTotal: RouteLine.count()])     ;
+        render(view: 'list',model: [routeLineInstanceList: RouteLine.findAllByLineTypeLike(params.get("lineType")), routeLineInstanceTotal: RouteLine.count(),lineType:params.get("lineType")])     ;
     }
 
     def  switchLineType(){

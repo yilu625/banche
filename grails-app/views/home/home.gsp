@@ -14,7 +14,7 @@
 
     body {
         height: 100%;
-        background-image: url('/images/bj.jpg');
+        background-image: url('images/bj.jpg');
         background-repeat-x: repeat;
         background-repeat-y: no-repeat;
         background-attachment: initial;
@@ -22,7 +22,7 @@
         background-position-y: 0%;
         background-origin: initial;
         background-clip: initial;
-        background-color: #2C4762;
+
         font: normal 14px/1.4 "Helvetica Neue","HelveticaNeue",Helvetica,Arial,sans-serif;
         color: #444;
         margin: 0;

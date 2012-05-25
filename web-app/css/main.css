@@ -11,17 +11,20 @@ h1, h2, h3, h4, h5, h6 {
 /* BASE LAYOUT */
 
 html {
-	background-color: #ddd;
-	background-image: -moz-linear-gradient(center top, #aaa, #ddd);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aaa), color-stop(1, #ddd));
-	background-image: linear-gradient(top, #aaa, #ddd);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#aaaaaa', EndColorStr = '#dddddd');
-	background-repeat: no-repeat;
-	height: 100%;
-	/* change the box model to exclude the padding from the calculation of 100% height (IE8+) */
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
+    height: 100%;
+    background-image: url('../images/bj.jpg');
+    background-repeat-x: repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-position-x: 50%;
+    background-position-y: 0%;
+    background-origin: initial;
+    background-clip: initial;
+
+    font: normal 14px/1.4 "Helvetica Neue","HelveticaNeue",Helvetica,Arial,sans-serif;
+    color: #444;
+    margin: 0;
+    padding: 0;
 }
 
 html.no-cssgradients {
@@ -593,7 +596,7 @@ a.skip {
 /*customer */
 #header{
     height: 100%;
-    background: #2C4762 url('/images/background.png') top repeat-x;
+    background:url('/images/background.png') top repeat-x;
     background-image: url('/images/background.png');
     background-repeat-x: repeat;
     background-repeat-y: no-repeat;
@@ -602,7 +605,6 @@ a.skip {
     background-position-y: 0%;
     background-origin: initial;
     background-clip: initial;
-    background-color: #2C4762;
     font: normal 14px/1.4 "Helvetica Neue","HelveticaNeue",Helvetica,Arial,sans-serif;
     color: #444;
     margin: 0;
